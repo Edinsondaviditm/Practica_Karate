@@ -10,5 +10,4 @@ class UsersRunner {
 
        return Karate.run("users").relativeTo(getClass());
     }
-
 }

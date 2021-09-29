@@ -11,7 +11,7 @@ Feature: sample karate test script
 
     * def first = response[1]
 
-    Given url 'https://jsonplaceholder.typicode.com/users/1'
+    Given path 'users', first.id
     When method get
     Then status 200
 
@@ -39,3 +39,11 @@ Feature: sample karate test script
     * def id = response.id
     * print 'created id is: ', id
 
+
+    #puedo tambien llamar el json desde un archivo
+
+  Scenario: create a new user
+    Given path 'users'
+    And request read('jsonrequest/user.json')
+    When method post
+    Then status 201

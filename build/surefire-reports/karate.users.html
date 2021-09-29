@@ -37,7 +37,7 @@
           
 <div class="nav-count">
             
-<div class="bg-success" id="nav-pass">2</div>
+<div class="bg-success" id="nav-pass">3</div>
             
 <div class="bg-danger" id="nav-fail">0</div>
           
@@ -47,7 +47,7 @@
         
 <div id="nav-type">Scenarios</div>         
         
-<div id="nav-date">2021-09-25 11:12:03 AM</div>        
+<div id="nav-date">2021-09-29 11:11:05 AM</div>        
       
 <div class="nav-container">
 <div class="nav-item passed">
@@ -55,6 +55,9 @@
 </div>
 <div class="nav-item passed">
 <a href="#[2:18]">[2:18] create a user and then get it by id </a>
+</div>
+<div class="nav-item passed">
+<a href="#[3:45]">[3:45] create a new user </a>
 </div>
 </div>
 </div>
@@ -70,7 +73,7 @@
 <div class="scenario-tags"></div>
 <span class="scenario-keyword">Scenario: [1:7]</span><span class="scenario-name">get all users and then get the first user by id </span>
 </div>
-<div class="scenario-time passed">ms: 1464</div>
+<div class="scenario-time passed">ms: 1148</div>
 </div>
 <div class="step-row">
 <div class="step-container" id="[1:7]bg">
@@ -84,41 +87,41 @@
 <div class="step-ref bg-step">1</div>
 <div class="step-cell passed">* url 'https://jsonplaceholder.typicode.com'</div>
 </div>
-<div class="time-cell passed">3</div>
+<div class="time-cell passed">2</div>
 </div>
-<div class="preformatted" data-parent="1">11:12:01.257 karate.env system property was:</div>
+<div class="preformatted" data-parent="1">11:11:03.861 karate.env system property was:</div>
 <div class="step-row">
 <div class="step-container" id="2">
 <div class="step-ref passed">2</div>
 <div class="step-cell passed">Given path 'users'</div>
 </div>
-<div class="time-cell passed">3</div>
+<div class="time-cell passed">2</div>
 </div>
 <div class="step-row">
 <div class="step-container" id="3">
 <div class="step-ref passed">3</div>
 <div class="step-cell passed">When method get</div>
 </div>
-<div class="time-cell passed">1186</div>
+<div class="time-cell passed">848</div>
 </div>
-<div class="preformatted" data-parent="3">11:12:01.969 request:
+<div class="preformatted" data-parent="3">11:11:04.310 request:
 1 &gt; GET https://jsonplaceholder.typicode.com/users
 1 &gt; Accept-Encoding: gzip,deflate
 1 &gt; Connection: Keep-Alive
 1 &gt; Host: jsonplaceholder.typicode.com
 1 &gt; User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_301)
 
-11:12:02.520 response time in milliseconds: 543,79
+11:11:04.752 response time in milliseconds: 434,36
 1 &lt; 200
-1 &lt; Age: 24513
+1 &lt; Age: 15215
 1 &lt; CF-Cache-Status: HIT
-1 &lt; CF-RAY: 694587a0cbfd09fe-MIA
+1 &lt; CF-RAY: 69667ba77e8b370e-MIA
 1 &lt; Connection: keep-alive
 1 &lt; Content-Type: application/json; charset=utf-8
-1 &lt; Date: Sat, 25 Sep 2021 16:11:41 GMT
+1 &lt; Date: Wed, 29 Sep 2021 16:10:41 GMT
 1 &lt; Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
 1 &lt; NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
-1 &lt; Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=kczE5WPTrQZOxAL3q5gPCGWlEEbpSBsDAFAc%2F8fGj7GasWLFBvrYpd0O2tqepYwIoHuloc3UnuQjqi%2FNW0Jo4M%2B9QbvZMnscMl58lxXM3L0M5UNocpt%2B9VmAQFUNHfXZ8QuGk3uTlO3ohPj6mPaA"}],"group":"cf-nel","max_age":604800}
+1 &lt; Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=FS5uGjjgnj7bZsvMSBIS3OwYzQT0dYqvGuWx%2BvRlNWdbY%2FeN%2BlkLJCG0DsmsDkZeO6b8YaWgq0dsYRujdzomFz1C6n%2BD5f480ah3G%2Fr2URa3WaSc1gwV3kURmFTXJGhgBQxqJJwdJyVej%2BVBqaDR"}],"group":"cf-nel","max_age":604800}
 1 &lt; Server: cloudflare
 1 &lt; Transfer-Encoding: chunked
 1 &lt; access-control-allow-credentials: true
@@ -132,8 +135,8 @@
 1 &lt; x-content-type-options: nosniff
 1 &lt; x-powered-by: Express
 1 &lt; x-ratelimit-limit: 1000
-1 &lt; x-ratelimit-remaining: 999
-1 &lt; x-ratelimit-reset: 1631494203
+1 &lt; x-ratelimit-remaining: 998
+1 &lt; x-ratelimit-reset: 1631494383
 [
   {
     "id": 1,
@@ -378,46 +381,46 @@
 <div class="step-ref passed">5</div>
 <div class="step-cell passed">* def first = response[1]</div>
 </div>
-<div class="time-cell passed">13</div>
+<div class="time-cell passed">9</div>
 </div>
 <div class="step-row">
 <div class="step-container" id="6">
 <div class="step-ref passed">6</div>
-<div class="step-cell passed">Given url 'https://jsonplaceholder.typicode.com/users/1'</div>
+<div class="step-cell passed">Given path 'users', first.id</div>
 </div>
-<div class="time-cell passed">2</div>
+<div class="time-cell passed">7</div>
 </div>
 <div class="step-row">
 <div class="step-container" id="7">
 <div class="step-ref passed">7</div>
 <div class="step-cell passed">When method get</div>
 </div>
-<div class="time-cell passed">258</div>
+<div class="time-cell passed">281</div>
 </div>
-<div class="preformatted" data-parent="7">11:12:02.542 request:
-2 &gt; GET https://jsonplaceholder.typicode.com/users/1
+<div class="preformatted" data-parent="7">11:11:04.772 request:
+2 &gt; GET https://jsonplaceholder.typicode.com/users/2
 2 &gt; Accept-Encoding: gzip,deflate
 2 &gt; Connection: Keep-Alive
 2 &gt; Host: jsonplaceholder.typicode.com
 2 &gt; User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_301)
 
-11:12:02.799 response time in milliseconds: 254,85
+11:11:05.051 response time in milliseconds: 276,81
 2 &lt; 200
-2 &lt; Age: 5577
+2 &lt; Age: 19902
 2 &lt; CF-Cache-Status: HIT
-2 &lt; CF-RAY: 694587a29b9c127f-MIA
+2 &lt; CF-RAY: 69667ba97c4e02ba-MIA
 2 &lt; Connection: keep-alive
 2 &lt; Content-Type: application/json; charset=utf-8
-2 &lt; Date: Sat, 25 Sep 2021 16:11:41 GMT
+2 &lt; Date: Wed, 29 Sep 2021 16:10:41 GMT
 2 &lt; Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
 2 &lt; NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
-2 &lt; Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=jTsnsXN9%2F0lh5pRShgE7Yh%2BbzBJBivJ0%2BlHcZyCnuAdX%2Be7q1AFg%2Bu%2FVUsDHSJS9KJ0dM3rPD3l1hdZa7bND0t8TE54RMxnHAz5btRZmIZyZEqc47zhjkLyZXETzc2SBnwcHX4XMGi4a0Cw3i5GM"}],"group":"cf-nel","max_age":604800}
+2 &lt; Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=trGhwMw0sk3OGINy3MYruGC3%2BODbMsP4S6IaE3MXQCzZbXtWQIkXFmoWIiw7HDWokXE3d9Z0Qc16C5L%2FPxrixLQaeLOurON48rqkOkDwkF4xy9KbV7khn02AOwFSkSoJDAFOYpCEM1LxHxpRjUFW"}],"group":"cf-nel","max_age":604800}
 2 &lt; Server: cloudflare
 2 &lt; Transfer-Encoding: chunked
 2 &lt; access-control-allow-credentials: true
 2 &lt; alt-svc: h3=":443"; ma=86400, h3-29=":443"; ma=86400, h3-28=":443"; ma=86400, h3-27=":443"; ma=86400
 2 &lt; cache-control: max-age=43200
-2 &lt; etag: W/"1fd-+2Y3G3w049iSZtw5t1mzSnunngE"
+2 &lt; etag: W/"1fd-XTG63SYhaP/Uo6/vgmARnL3rpBk"
 2 &lt; expires: -1
 2 &lt; pragma: no-cache
 2 &lt; vary: Origin, Accept-Encoding
@@ -425,29 +428,29 @@
 2 &lt; x-content-type-options: nosniff
 2 &lt; x-powered-by: Express
 2 &lt; x-ratelimit-limit: 1000
-2 &lt; x-ratelimit-remaining: 998
-2 &lt; x-ratelimit-reset: 1632429065
+2 &lt; x-ratelimit-remaining: 999
+2 &lt; x-ratelimit-reset: 1631494443
 {
-  "id": 1,
-  "name": "Leanne Graham",
-  "username": "Bret",
-  "email": "Sincere@april.biz",
+  "id": 2,
+  "name": "Ervin Howell",
+  "username": "Antonette",
+  "email": "Shanna@melissa.tv",
   "address": {
-    "street": "Kulas Light",
-    "suite": "Apt. 556",
-    "city": "Gwenborough",
-    "zipcode": "92998-3874",
+    "street": "Victor Plains",
+    "suite": "Suite 879",
+    "city": "Wisokyburgh",
+    "zipcode": "90566-7771",
     "geo": {
-      "lat": "-37.3159",
-      "lng": "81.1496"
+      "lat": "-43.9509",
+      "lng": "-34.4618"
     }
   },
-  "phone": "1-770-736-8031 x56442",
-  "website": "hildegard.org",
+  "phone": "010-692-6593 x09125",
+  "website": "anastasia.net",
   "company": {
-    "name": "Romaguera-Crona",
-    "catchPhrase": "Multi-layered client-server neural-net",
-    "bs": "harness real-time e-markets"
+    "name": "Deckow-Crist",
+    "catchPhrase": "Proactive didactic contingency",
+    "bs": "synergize scalable supply-chains"
   }
 }</div>
 <div class="step-row">
@@ -464,7 +467,7 @@
 <div class="scenario-tags"></div>
 <span class="scenario-keyword">Scenario: [2:18]</span><span class="scenario-name">create a user and then get it by id </span>
 </div>
-<div class="scenario-time passed">ms: 369</div>
+<div class="scenario-time passed">ms: 376</div>
 </div>
 <div class="step-row">
 <div class="step-container" id="[2:18]bg">
@@ -480,7 +483,7 @@
 </div>
 <div class="time-cell passed">0</div>
 </div>
-<div class="preformatted" data-parent="9">11:12:02.812 karate.env system property was:</div>
+<div class="preformatted" data-parent="9">11:11:05.063 karate.env system property was:</div>
 <div class="step-row">
 <div class="step-container" id="10">
 <div class="step-ref passed">10</div>
@@ -504,7 +507,7 @@
 <div class="step-ref passed">11</div>
 <div class="step-cell passed">Given url 'https://jsonplaceholder.typicode.com/users'</div>
 </div>
-<div class="time-cell passed">2</div>
+<div class="time-cell passed">1</div>
 </div>
 <div class="step-row">
 <div class="step-container" id="12">
@@ -518,9 +521,9 @@
 <div class="step-ref passed">13</div>
 <div class="step-cell passed">When method post</div>
 </div>
-<div class="time-cell passed">358</div>
+<div class="time-cell passed">369</div>
 </div>
-<div class="preformatted" data-parent="13">11:12:02.820 request:
+<div class="preformatted" data-parent="13">11:11:05.069 request:
 1 &gt; POST https://jsonplaceholder.typicode.com/users
 1 &gt; Accept-Encoding: gzip,deflate
 1 &gt; Connection: Keep-Alive
@@ -530,17 +533,17 @@
 1 &gt; User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_301)
 {"name":"Test User","username":"testuser","email":"test@user.com","address":{"street":"Has No Name","suite":"Apt. 123","city":"Electri","zipcode":"54321-6789"}}
 
-11:12:03.172 response time in milliseconds: 351,72
+11:11:05.433 response time in milliseconds: 362,95
 1 &lt; 201
 1 &lt; CF-Cache-Status: DYNAMIC
-1 &lt; CF-RAY: 694587a48c6767c6-MIA
+1 &lt; CF-RAY: 69667bab58a4225d-MIA
 1 &lt; Connection: keep-alive
 1 &lt; Content-Length: 216
 1 &lt; Content-Type: application/json; charset=utf-8
-1 &lt; Date: Sat, 25 Sep 2021 16:11:42 GMT
+1 &lt; Date: Wed, 29 Sep 2021 16:10:41 GMT
 1 &lt; Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
 1 &lt; NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
-1 &lt; Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=65fBsgcCV1QWDTSLdbro%2B20DB7OAetds84DSd7Wt%2FFsuqrBes6JzRN5TeqiObOlhWPzAoG6KCuYhEjOu2daPebhMEv8jQj5rikWp409LI3PN6Vd%2FoRYsDB9L9X4ivGBsHnnvgYip68GlxWSogHU6"}],"group":"cf-nel","max_age":604800}
+1 &lt; Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=MxoGgGYK82J8bkcX3Gcv0otQPhk3aXoZLc%2BTHQCA%2BrkrqbwFmKvjg1S6wC0jm1GcIlrx%2BbbRldP93BBiOePSLedV3XLy9BQQADayb6cmwjrbK8t%2BFk2qh0EYeLUCUUqLC9vCpppc41NxxBT2Vpp%2F"}],"group":"cf-nel","max_age":604800}
 1 &lt; Server: cloudflare
 1 &lt; access-control-allow-credentials: true
 1 &lt; access-control-expose-headers: Location
@@ -555,8 +558,8 @@
 1 &lt; x-content-type-options: nosniff
 1 &lt; x-powered-by: Express
 1 &lt; x-ratelimit-limit: 1000
-1 &lt; x-ratelimit-remaining: 999
-1 &lt; x-ratelimit-reset: 1632586329
+1 &lt; x-ratelimit-remaining: 998
+1 &lt; x-ratelimit-reset: 1632931850
 {
   "name": "Test User",
   "username": "testuser",
@@ -581,16 +584,117 @@
 <div class="step-ref passed">15</div>
 <div class="step-cell passed">* def id = response.id</div>
 </div>
-<div class="time-cell passed">6</div>
+<div class="time-cell passed">4</div>
 </div>
 <div class="step-row">
 <div class="step-container" id="16">
 <div class="step-ref passed">16</div>
 <div class="step-cell passed">* print 'created id is: ', id</div>
 </div>
-<div class="time-cell passed">3</div>
+<div class="time-cell passed">2</div>
 </div>
-<div class="preformatted" data-parent="16">11:12:03.181 [print] created id is:  11</div>
+<div class="preformatted" data-parent="16">11:11:05.440 [print] created id is:  11</div>
+</div>
+<div class="scenario">
+<div class="scenario-heading" id="[3:45]">
+<div class="heading-container">
+<div class="scenario-tags"></div>
+<span class="scenario-keyword">Scenario: [3:45]</span><span class="scenario-name">create a new user </span>
+</div>
+<div class="scenario-time passed">ms: 387</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="[3:45]bg">
+<div class="step-ref bg-step">&gt;&gt;</div>
+<div class="step-cell passed">Background:</div>
+</div>
+<div class="time-cell passed"></div>
+</div>
+<div class="step-row" data-parent="[3:45]bg">
+<div class="step-container" id="17">
+<div class="step-ref bg-step">17</div>
+<div class="step-cell passed">* url 'https://jsonplaceholder.typicode.com'</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="preformatted" data-parent="17">11:11:05.447 karate.env system property was:</div>
+<div class="step-row">
+<div class="step-container" id="18">
+<div class="step-ref passed">18</div>
+<div class="step-cell passed">Given path 'users'</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="19">
+<div class="step-ref passed">19</div>
+<div class="step-cell passed">And request read('jsonrequest/user.json')</div>
+</div>
+<div class="time-cell passed">15</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="20">
+<div class="step-ref passed">20</div>
+<div class="step-cell passed">When method post</div>
+</div>
+<div class="time-cell passed">371</div>
+</div>
+<div class="preformatted" data-parent="20">11:11:05.463 request:
+1 &gt; POST https://jsonplaceholder.typicode.com/users
+1 &gt; Accept-Encoding: gzip,deflate
+1 &gt; Connection: Keep-Alive
+1 &gt; Content-Length: 160
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Host: jsonplaceholder.typicode.com
+1 &gt; User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_301)
+{"name":"Test User","username":"testuser","email":"test@user.com","address":{"street":"Has No Name","suite":"Apt. 123","city":"Electri","zipcode":"54321-6789"}}
+
+11:11:05.833 response time in milliseconds: 368,63
+1 &lt; 201
+1 &lt; CF-Cache-Status: DYNAMIC
+1 &lt; CF-RAY: 69667badfbc60362-MIA
+1 &lt; Connection: keep-alive
+1 &lt; Content-Length: 216
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Date: Wed, 29 Sep 2021 16:10:42 GMT
+1 &lt; Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+1 &lt; NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+1 &lt; Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=oLeBR%2FubYqGI6MYZgw8ErH%2FHkLpWmJkhbOWgChmY2ewLCTcQRSPMdvy1DxRAhsgERm1xHJQMZFtGrctOqHU6EILo0E8H3j1dvpLSOmiVaQPNmUxukk0Kmjz17tg%2BYhvDqbBqEKakuE3y9NY73UjW"}],"group":"cf-nel","max_age":604800}
+1 &lt; Server: cloudflare
+1 &lt; access-control-allow-credentials: true
+1 &lt; access-control-expose-headers: Location
+1 &lt; alt-svc: h3=":443"; ma=86400, h3-29=":443"; ma=86400, h3-28=":443"; ma=86400, h3-27=":443"; ma=86400
+1 &lt; cache-control: no-cache
+1 &lt; etag: W/"d8-pYV7+YuMGP2hxHPU9ARrf97ifDA"
+1 &lt; expires: -1
+1 &lt; location: http://jsonplaceholder.typicode.com/users/11
+1 &lt; pragma: no-cache
+1 &lt; vary: Origin, X-HTTP-Method-Override, Accept-Encoding
+1 &lt; via: 1.1 vegur
+1 &lt; x-content-type-options: nosniff
+1 &lt; x-powered-by: Express
+1 &lt; x-ratelimit-limit: 1000
+1 &lt; x-ratelimit-remaining: 997
+1 &lt; x-ratelimit-reset: 1632931850
+{
+  "name": "Test User",
+  "username": "testuser",
+  "email": "test@user.com",
+  "address": {
+    "street": "Has No Name",
+    "suite": "Apt. 123",
+    "city": "Electri",
+    "zipcode": "54321-6789"
+  },
+  "id": 11
+}</div>
+<div class="step-row">
+<div class="step-container" id="21">
+<div class="step-ref passed">21</div>
+<div class="step-cell passed">Then status 201</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
 </div>
 </div>
     
